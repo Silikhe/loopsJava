@@ -7,19 +7,17 @@ public class Main {
         int [] arr = {1,2,3,4,5};
         String[] names = new  String[5];
         Scanner scanner = new Scanner(System.in);
-        for (int i=0; i< names.length; i++){
-            System.out.println("Enter 5 names");
-            String input =scanner.nextLine();
-            names[i] = input;
-        }
-        for (String name:names){
-            if ( name.equals("Wanjala")){
-//                System.out.println(name);
-                 break;
-            }
-            System.out.println(name);
-        }
+
+        System.out.print("Type a number");
+
+        int count = 0;
+        int x = scanner.nextInt();
+       while ( x !=10){
+           x = scanner.nextInt();
+           count ++;
+       }
 	// write your code here
+        System.out.println("You have tried " + count + " times");
 
     }
 }
